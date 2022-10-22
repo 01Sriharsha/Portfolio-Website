@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&family=Lato:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+html,
+body {
+    height: 100vh;
+    margin: 0;
+    font-size: 16px;
+}
+
+.img1 {
+    background-image: url(img/pic2.jpg);
+    min-height: 100%;
+    max-width: 100%;
+    display: grid;
+    place-items: center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;background-attachment: fixed;
+}
+
+.text {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+#textbg {
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.section1 {
+    background-color: aliceblue;
+}
+
+.para {
+    padding: 25px 50px;
+    line-height: 1.5rem;
+}
+h2{
+    text-align: center;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+
+.img2 {
+    background-image: url(img/pic1.jpg);
+    min-height: 400px;
+    min-width: 100%;
+    display: grid;
+    place-items: center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;background-attachment: fixed;
+}
+
+.section2 {
+    background-color: aliceblue;
+}
+
+.img3 {
+    background-image: url(img/pic4.jpg);
+    min-height: 400px;
+    min-width: 100%;
+    display: grid;
+    place-items: center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;background-attachment: fixed;
+}
+
+.section3 {
+    background-color: black;
+color: white;
+}
+.img4 {
+    background-image: url(img/pic2.jpg);
+    min-height: 100%;
+    min-width: 100%;
+    display: grid;
+    place-items: center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@media screen and (max-width:400px) {
+    #textbg {
+        font-size: 10px;
+    }
+}

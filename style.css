@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+html,body{
+    scroll-behavior: smooth;
+}
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    list-style: none;
+}
+
+header{
+    background-color: #0089b7;
+    position: sticky;
+    top: 0;
+    padding: 0.7rem;
+    z-index: 100;
+}
+
+.project-section{
+    scroll-margin: 40px;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+.navigation ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation ul li{
+    font-size: 2.5rem;
+    margin: 0 2.5rem;
+    border-bottom: 0.4rem solid transparent;
+    transition: 0.3s ease-in-out;
+}
+
+.navigation ul li:hover{
+    transition: 0.3s ease-in-out;
+    border-bottom: 0.4rem solid greenyellow;
+}
+
+.navigation ul li a:hover{
+    color:antiquewhite;
+}
+
+
+
+.profile-section{
+    background-color:#003d62 ;
+}
+
+.profile-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 6rem 2rem;
+}
+
+.mypic img{
+    width: 30rem;
+    height: 35rem;
+    border-radius: 35%;
+    transition: 5s ease-in;
+}
+
+.mypic img:hover{
+    /* border-radius: 100%;
+    transform: rotate(359deg);
+    transition: 0.5s ease-in; */
+    animation: rotation 1s  forwards;
+
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+.name h1{
+    font-size: 2.5rem;
+    color: white;
+}
+
+.hi-text, .developer{
+    font-size: 4rem;
+}
+
+.developer{
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    border-right: 0.15em solid orange;
+    animation: typing 4s steps(40, end) infinite alternate-reverse, blink-caret 3s step-end infinite;
+}
+
+@keyframes typing {
+    from{
+        width: 0%;
+    }
+
+    to{
+        width: 100%;
+    }
+}
+
+hr{
+    background-color: aqua;
+}
+
+.project-section{
+     background-color:#083754 ;
+}
+
+.project-container{
+    padding: 3rem 0;
+}
+
+.heading{
+    text-align: center;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem, 1fr));
+    gap: 5rem;
+    place-items: center;
+}
+
+.card-container{
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.thumbnail-img img{
+    width: 30rem;
+    height: 40rem;
+    transition: 1s ease-in-out;
+}
+
+
+.card-container{
+    transition: 0.3s ease-in-out;
+}
+
+.card-container:hover{
+    transform: scale(1.05);
+    transition: 0.5s ease-in-out;
+}
+
+.thumbnail-img:hover{
+    transition: 0.3s ease-in-out;
+    transform: scale(1.07);
+    opacity: 0.7;
+}
+
+.project-name{
+    position: relative;
+    top: -6.5rem;
+    margin-bottom: -6.5rem;
+    padding: 1.2rem 0;
+    transform: translateY(100px);
+    transition: 0.3s ease-in-out;
+}
+
+.card-container:hover .project-name{
+    background-color: white;
+    transform: translateY(0px);
+    transition: 0.3s ease-in-out;
+}
+
+.project-name h3 {
+    text-align: center;
+}
+
+.project-name h3 a{
+    font-size: 1.5rem;
+    color: #083754;
+}
+
+.project-name h3 a:hover{
+    color:#0089b7;
+}
+
+.contact-section{
+    background-color:#003d62;
+}
+
+.contact-container{
+    padding: 5rem 0rem;
+}
+
+.work h2{
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 800;
+    color: white;
+    padding-bottom: 4rem;
+}
+
+.social-grid{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit,minmax(30rem, 1fr));
+    gap: 5rem;
+}
+
+.social-way a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-way a:hover{
+    color:grey;
+}
+
+.social-img img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.social-name h4{
+    padding-left: 1rem;
+    font-size: 2rem;
+}
+
+.footer-section{
+    background-color: #0089b7;
+}
+
+.copyrights h2{
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+
+
+
+

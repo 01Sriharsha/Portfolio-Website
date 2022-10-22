@@ -1,0 +1,37 @@
+@media  (max-width:950px){
+    .main_page{
+        min-height: 50vh;
+        min-width: 50ch;
+    }
+    .black_box{
+        min-width: 50ch;
+    }
+
+    .field{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-width: 50ch;
+    }
+
+    .field-content{
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0px;
+    }
+
+    .support{
+        flex-direction: column;
+        min-width: 50ch;
+    }
+
+    .contact , .about{
+        /* padding: 70px; */
+        margin: 0 auto;
+        min-width: 50ch;
+    }
+}

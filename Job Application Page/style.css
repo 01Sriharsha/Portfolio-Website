@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:grey;
+    min-height: 100vh;
+}
+
+.container{
+    background-color: aliceblue;
+    max-width:500px;
+    min-height: 80vh;
+    margin: 26px auto;
+    border-radius: 10px;
+}
+
+.head{
+    padding: 10px;
+}
+
+h1,a{
+    text-align: center;
+}
+
+h1 a{
+    text-decoration: none;
+    color: blue;
+    font-size: large;
+}
+
+.form_container{
+    padding: 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(200px,1fr));
+    gap: 20px;
+    
+}
+
+.form_control{
+    display: flex;
+    flex-direction: column;
+}
+
+.text_area{
+    display: grid;
+    grid-column: 1 / span 2;
+}
+
+label{
+    font-size: 13px;
+}
+
+input{
+    padding: 5px;
+    font-size: 12px;
+}
+
+input:focus{
+    outline-color: aliceblue;
+}
+
+.btn{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 15px;
+    padding: 5px 10px;
+}
+
+#submit{
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: red;
+    transition: 0.4s ease-in-out;
+}
+
+#submit:hover{
+    background-color: #ccc;
+    color: blue;
+}
+
+#job_role{
+    padding: 5px;
+}
+
+@media only screen and (max-width:460px){
+    .text_area{
+        display: grid;
+        grid-column: 1 / span 1;
+    }
+}
+

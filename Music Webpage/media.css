@@ -1,0 +1,102 @@
+@media only screen and (max-width:900px) {
+    .gift-img img {
+        width: 350px;
+    }
+
+    .foot h2 {
+        font-size: 20px;
+        margin: 10px 0px;
+    }
+
+    .img-container{
+        position: relative;
+        margin-top: -180px;
+    }
+}
+
+@media only screen and (max-width:700px) {
+
+    .gift-cards {
+        flex-direction: column;
+    }
+
+    .gift-img {
+        display: grid;
+        place-items: center;
+    }
+
+    .gift-text{
+        margin-top: 0;
+    }
+
+    .gift-text,
+    .gift-text p {
+        padding: 0;
+    }
+
+    .foot {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 20px;
+    }
+
+    .img-container{
+        position: relative;
+        margin-top: -170px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+
+    .text-container{
+        min-height: 50vh;
+    }
+
+    .navigation {
+        height: 100px;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .img-container{
+        position: relative;
+        margin-top: 150px;
+    }
+}
+
+@media only screen and (max-width:450px) {
+
+    .head-menu {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .head-menu li{
+        margin: 0px 10px;
+    }
+
+    .text-container h2,h4{
+        margin: 10px;
+    }
+    
+    .text-container p{
+        margin: 10px;
+        font-size: 10px;
+        padding: 10px;
+    }
+
+    .img-container{
+        position: relative;
+        margin-top: -150px;
+    }
+
+    .movie-container{
+        margin-top: 0px;
+    }
+
+    .text-container{
+        min-height: 50vh;
+    }
+
+}
+

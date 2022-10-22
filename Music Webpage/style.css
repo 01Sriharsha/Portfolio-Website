@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: 'Fira Sans', sans-serif;
+    max-width: 1300px;
+    margin: 0 auto;
+    scroll-behavior: smooth;
+}
+
+.navigation{
+    margin: 0 auto;
+    background-color: #1a1a7f;
+    color: white;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    align-items: flex-start;
+}
+
+.logo h1 a{
+    text-decoration: none;
+    color: white;
+}
+
+.head-menu{
+    display: flex;
+    
+}
+
+.head-menu li{
+    margin: 0px 20px;
+    list-style: none;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.head-menu li a{
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent;
+    transition: 0.2s ease-in-out;
+}
+
+.head-menu li a:hover{
+    border-bottom: 2px solid white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+
+}
+
+.main{
+    min-height: 100vh;
+    background-image: url(img/dj.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    opacity: 1.5;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    font-weight: 800;
+    z-index: 5px;
+}
+
+.music-section{
+    display: grid;
+    place-items: center;
+    
+    color: white;
+}
+
+.text-container{
+    background-color: #01076a;
+    padding: 30px;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.text-container>h2,h4{
+    margin: 30px;
+}
+
+.text-container p{
+    margin: 30px;
+}
+
+.trial-btn{
+    height: 30px;
+    width: 250px;
+    border-radius: 3px;
+    border: white;
+
+}
+
+.img-container{
+    position: relative;
+    margin-top: -300px;
+}
+
+.img-container img{
+    width: 100%;
+}
+
+.movie-container{
+    margin-top: 50px;
+    padding: 30px;
+    display: grid;
+    place-items: center;
+}
+
+.movie-container h2,p{
+    padding: 20px 20px;
+}
+
+.btn-read{
+    height: 40px;
+    width: 150px;
+    background-color:#01076a ;
+    color: white;
+    border: white;
+    border-radius: 3px;
+}
+
+.img-laptop{
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.img-laptop img{
+    width: 100%;
+}
+
+.night{
+    background-image: url(img/music.jpg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center;
+    z-index: 100;
+    
+}
+
+.night-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    color: white;
+}
+
+.night-text h1{
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.gift-cards{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+.gift-img img{
+    width: 500px;
+    height: 400px;
+}
+
+.gift-text{
+    margin-top: 70px;
+    margin-left: 40px;
+}
+
+.gift-text h1{
+    margin-bottom: 20px;
+}
+
+.gift-text p{
+    padding: 20px 0px;
+}
+
+.gift-text hr{
+    margin: 30px 0px;
+    margin-right: 20px;
+    background-color: grey;
+}
+
+.btn-redeem{
+    padding: 10px;
+    width: 150px;
+    background-color: #01076a;
+    border: none;
+    border-radius: 3px;
+    color: white;
+}
+
+button{
+    transition: 0.3s ease-in-out;
+}
+
+button:hover{
+    background-color: grey;
+    color: black;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+footer{
+    color: white;
+}
+.foot{
+    background-color: #1a1a7f;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0px;
+}
+
+.foot li{
+    list-style: none;
+    padding: 5px 0px;
+    cursor: pointer;
+}
+
+.foot li:hover{
+    color: grey;
+}
+
+.foot h2{
+    border-bottom: 2px solid white;
+    margin-bottom: 20px;
+}
+
+.copyrights{
+    padding: 15px 0px;
+    background-color: #01076a;
+    text-align: center;
+}
