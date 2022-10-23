@@ -6,6 +6,18 @@
     .profile-container{
         justify-content: space-around;
     }
+
+    .contactMeForm{
+        min-height: 400px;
+    }
+
+    .contact-developer-img img{
+        display: none;
+    }
+    
+    .social-container hr{
+        width: 90%;
+    }
 }
 
 @media screen and (max-width:584px) {
@@ -54,5 +66,22 @@
 
     .work h2{
         font-size: 3rem;
+    }
+
+    .contactMeForm{
+        min-height: 400px;
+    }
+
+    .contact-form{
+        width: 300px;
+        
+    }
+
+    .input-group input {
+        width: 250px;
+    }
+
+    .input-group textarea {
+        width: 250px;
     }
 }
