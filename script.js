@@ -9,7 +9,7 @@ function validateName() {
         nameError.style.color = "red";
         return false;
     }
-    if (!nameval.match(/^[A-Za-z]{5}/)) {
+    if (!nameval.match(/^[A-Za-z\s\.]{5}/)) {
         nameError.innerHTML = "Name not valid"
         nameError.style.color = "red";
         return false;
@@ -72,6 +72,7 @@ function validateForm() {
     else {
         submitError.innerHTML = 'Submitting...';
         submitError.style.color = "Green";
+        return true;
     }
 }
 
