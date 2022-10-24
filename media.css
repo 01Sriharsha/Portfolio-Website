@@ -8,7 +8,7 @@
     }
 
     .contactMeForm{
-        min-height: 400px;
+        min-height: 500px;
     }
 
     .contact-developer-img img{
@@ -69,7 +69,7 @@
     }
 
     .contactMeForm{
-        min-height: 400px;
+        min-height: 450px;
     }
 
     .contact-form{
@@ -82,6 +82,10 @@
     }
 
     .input-group textarea {
+        width: 250px;
+    }
+
+    .contactbtn button {
         width: 250px;
     }
 }

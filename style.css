@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Roboto:wght@300&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Exo+2:wght@300&family=Kanit:wght@300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'DM Sans', sans-serif; */
+    /* font-family: 'Kanit', sans-serif; */
+    font-family: 'Exo 2', sans-serif;
 }
 
 html {
@@ -38,8 +43,8 @@ header {
     z-index: 100;
 }
 
-.project-section , .contactFormSection {
-    scroll-margin: 50px;
+.project-section , #Contact {
+    scroll-margin: 20px;
 }
 
 .navigation {
@@ -49,9 +54,11 @@ header {
 }
 
 .logo {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
     color: white;
+    margin-left: 1.5rem;
+    letter-spacing: 0.1rem;
 }
 
 .navigation ul {
@@ -61,7 +68,7 @@ header {
 }
 
 .navigation ul li {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin: 0 2.5rem;
     border-bottom: 0.4rem solid transparent;
     transition: 0.3s ease-in-out;
@@ -75,8 +82,6 @@ header {
 .navigation ul li a:hover {
     color: antiquewhite;
 }
-
-
 
 .profile-section {
     background-color: #003d62;
@@ -274,6 +279,7 @@ hr {
     text-align: center;
     font-size: 3rem;
     font-weight: bolder;
+    color: #083754;
 
 }
 
@@ -288,6 +294,8 @@ hr {
     font-weight: 600;
     font-size: 1.5rem;
     margin-bottom: 0.3rem;
+    color: #083754;
+    font-weight: bolder;
 }
 
 .input-group input {

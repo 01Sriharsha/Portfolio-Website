@@ -17,12 +17,12 @@
             <div class="container">
                 <div class="navigation">
                     <div class="logo">
-                        <h1><a href="#home-page">Portfolio</a></h1>
+                        <h1><a href="#home-page">K Sriharsha</a></h1>
                     </div>
                     <ul>
                         <li><a href="#home-page">Home</a></li>
                         <li><a href="#Projects">Projects</a></li>
-                        <li><a href="#ContactFormSection">Contact</a></li>
+                        <li><a href="#Contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -40,7 +40,7 @@
                         <h1>
                             <span class="hi-text">Hi, </span>I am Sriharsha <br>
                             <!-- <span class="name">I am Sriharsha</span> -->
-                            <p class="developer">Frontend Developer.</p>
+                            <p class="developer">Full Stack Developer.</p>
                         </h1>
                     </div>
                 </div>
@@ -135,29 +135,37 @@
                         <div class="contact-developer-img">
                             <img src="img/Contact Form/Develop.jpg" alt="Develop image">
                         </div>
-                        <form class="contact-form" id="contactform" action="https://formspree.io/f/xpznlvjw" method="post">
-                            
+                        <form class="contact-form" id="contactform" action="https://formspree.io/f/xpznlvjw"
+                            method="post">
+
                             <h1>Contact Me</h1>
                             <div class="input-group">
                                 <label for="name">Name</label>
-                                <input type="text" placeholder="Enter your Name" id="name" name="Name">
+                                <input type="text" placeholder="Enter your Name" id="name" name="Name"
+                                    onkeyup="validateName()">
+                                <span id="name-error"></span>
                             </div>
 
 
                             <div class="input-group">
                                 <label for="email">Email ID</label>
-                                <input type="email" placeholder="Enter your Email address" id="email" name="Email ID">
+                                <input type="email" placeholder="Enter your Email address" id="email" name="Email ID"
+                                    onkeyup="validateEmail()">
+                                <span id="email-error"></span>
                             </div>
 
                             <div class="input-group">
                                 <label for="textarea">Message</label>
                                 <textarea name="textarea" id="textarea" cols="30" rows="4"
-                                    placeholder="Enter your message" name="Message"></textarea>
+                                    placeholder="Enter your message" name="Message"
+                                    onkeyup="validateMessage()"></textarea>
+                                <span id="message-error"></span>
                             </div>
 
                             <div class="contactbtn">
-                                <button type="submit" id="btn">Submit</button>
+                                <button type="submit" id="btn" onclick="validateForm()">Submit</button>
                             </div>
+                            <span id="submit-error"></span>
                         </form>
                     </div>
 
@@ -166,16 +174,16 @@
                         <hr>
                         <div class="social-grid">
                             <div class="social-way">
-                                <a href="https://www.facebook.com/harsha.rock.731135/" target="_blank">
+                                <a href="#">
                                     <div class="social-img">
-                                        <img src="img/social/fb.jpg" alt="facebook">
+                                        <img src="img/social/linkedin.png" alt="Linkedin">
                                     </div>
                                     <div class="social-name">
-                                        <h4>FaceBook</h4>
+                                        <h4>Linkedin</h4>
                                     </div>
                                 </a>
                             </div>
-
+                            
                             <div class="social-way">
                                 <a href="https://www.instagram.com/__sriharsha_/" target="_blank">
                                     <div class="social-img">
@@ -199,28 +207,6 @@
                             </div>
 
                             <div class="social-way">
-                                <a href="#">
-                                    <div class="social-img">
-                                        <img src="img/social/linkedin.png" alt="Linkedin">
-                                    </div>
-                                    <div class="social-name">
-                                        <h4>Linkedin</h4>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="social-way">
-                                <a href="https://mail.google.com/mail/" target="_blank">
-                                    <div class="social-img">
-                                        <img src="img/social/gmail1.png" alt="Gmail">
-                                    </div>
-                                    <div class="social-name">
-                                        <h4>harshvasu463@gmail.com</h4>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="social-way">
                                 <a href="https://github.com/01Sriharsha" target="_blank">
                                     <div class="social-img">
                                         <img src="img/social/github.png" alt="GitHub">
@@ -231,7 +217,27 @@
                                 </a>
                             </div>
 
+                            <div class="social-way">
+                                <a href="https://mail.google.com/mail/" target="_blank">
+                                    <div class="social-img">
+                                        <img src="img/social/gmail1.png" alt="Gmail">
+                                    </div>
+                                    <div class="social-name">
+                                        <h4>ksriharsha2002@gmail.com</h4>
+                                    </div>
+                                </a>
+                            </div>
 
+                            <div class="social-way">
+                                <a href="https://www.facebook.com/harsha.rock.731135/" target="_blank">
+                                    <div class="social-img">
+                                        <img src="img/social/fb.jpg" alt="facebook">
+                                    </div>
+                                    <div class="social-name">
+                                        <h4>FaceBook</h4>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -242,11 +248,12 @@
         <section class="footer-section">
             <div class="container">
                 <div class="copyrights">
-                    <h2>Copyrights &copy; Portfolio - K.Sriharsha</h2>
+                    <h2>Copyrights &copy; Portfolio - K. Sriharsha</h2>
                 </div>
             </div>
         </section>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
