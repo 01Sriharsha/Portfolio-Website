@@ -5,8 +5,11 @@ let messageError = document.getElementById('message-error');
 function validateName() {
     let nameval = document.getElementById('name').value;
     if (nameval.length == 0) {
-        nameError.innerHTML = "*Name cannot be empty"
+        nameError.innerHTML = "*Name cannot be empty";
         nameError.style.color = "red";
+        setTimeout(() => {
+            nameError.innerHTML = "";
+        }, 3000);
         return false;
     }
     if (!nameval.match(/^[A-Za-z\s\.]{4,15}/)) {
@@ -26,6 +29,9 @@ function validateEmail() {
     if (emailval.length == 0) {
         emailError.innerHTML = "Email cannot be empty"
         emailError.style.color = "red"
+        setTimeout(() => {
+            emailError.innerHTML = "";
+        }, 3000);
         return false;
     }
     if (!emailval.match(/^[A-Za-z0-9]+[@][a-z]{5}[\.][a-z]{3}/)) {
@@ -45,6 +51,9 @@ function validateMessage() {
     if (messageval.length == 0) {
         messageError.innerHTML = "*Message cannot be empty"
         messageError.style.color = "red"
+        setTimeout(() => {
+            messageError.innerHTML = "";
+        }, 3000);
         return false;
     }
     if (!messageval.match(/^[A-Za-z0-9\s\.\,@!$#\*\'\"]{25}/)) {
