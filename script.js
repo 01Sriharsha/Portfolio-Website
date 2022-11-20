@@ -5,12 +5,12 @@ let messageError = document.getElementById('message-error');
 function validateName() {
     let nameval = document.getElementById('name').value;
     if (nameval.length == 0) {
-        nameError.innerHTML = "Name cannot be empty"
+        nameError.innerHTML = "*Name cannot be empty"
         nameError.style.color = "red";
         return false;
     }
-    if (!nameval.match(/^[A-Za-z\s\.]{5}/)) {
-        nameError.innerHTML = "Name not valid"
+    if (!nameval.match(/^[A-Za-z\s\.]{4,15}/)) {
+        nameError.innerHTML = "*Enter valid name"
         nameError.style.color = "red";
         return false;
     }
@@ -29,7 +29,7 @@ function validateEmail() {
         return false;
     }
     if (!emailval.match(/^[A-Za-z0-9]+[@][a-z]{5}[\.][a-z]{3}/)) {
-        emailError.innerHTML = "Email not valid"
+        emailError.innerHTML = "*Enter valid email address"
         emailError.style.color = "red"
         return false;
     }
@@ -43,12 +43,12 @@ function validateEmail() {
 function validateMessage() {
     let messageval = document.getElementById('textarea').value;
     if (messageval.length == 0) {
-        messageError.innerHTML = "Message cannot be empty"
+        messageError.innerHTML = "*Message cannot be empty"
         messageError.style.color = "red"
         return false;
     }
-    if (!messageval.match(/^[A-Za-z0-9\s\.\,]{30}/)) {
-        messageError.innerHTML = "Message should contain atleast 30 characters"
+    if (!messageval.match(/^[A-Za-z0-9\s\.\,@!$#\*\'\"]{25}/)) {
+        messageError.innerHTML = "*Message should contain atleast 25 characters"
         messageError.style.color = "red"
         return false;
     }
@@ -59,22 +59,22 @@ function validateMessage() {
     }
 }
 
-function validateForm() {
+function validateForm(event) {
     let submitError = document.getElementById('submit-error');
-    if (!validateName() || !validateEmail() || !validateMessage()) {
-        let contactform = document.getElementById('contactform');
-        contactform.action = "#contactform";
-        contactform.method = "";
-        submitError.innerHTML = 'Please Fill all Field';
+    if (!validateName() && !validateEmail() && !validateMessage() || !validateMessage() || !validateName()) {
+        event.preventDefault();
+        submitError.innerHTML = '*One of the field is either empty or not valid';
         submitError.style.color = "red";
+        setTimeout(() => {
+            submitError.innerHTML = '';
+        }, 3000);
         return false;
     }
     else {
+        let myform = document.getElementById('contactform');
+        myform.reset();
         submitError.innerHTML = 'Submitting...';
         submitError.style.color = "Green";
         return true;
     }
 }
-
-
-

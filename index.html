@@ -136,7 +136,7 @@
                             <img src="img/Contact Form/Develop.jpg" alt="Develop image">
                         </div>
                         <form class="contact-form" id="contactform" action="https://formspree.io/f/xqkjylpp"
-                            method="post">
+                            method="post" onsubmit="validateForm(event)">
 
                             <h1>Contact Me</h1>
                             <div class="input-group">
@@ -163,7 +163,7 @@
                             </div>
 
                             <div class="contactbtn">
-                                <button type="submit" id="btn" onclick="validateForm()">Submit</button>
+                                <button type="submit" id="btn">Submit</button>
                             </div>
                             <span id="submit-error"></span>
                         </form>
