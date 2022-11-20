@@ -71,10 +71,15 @@ function validateForm(event) {
         return false;
     }
     else {
-        let myform = document.getElementById('contactform');
-        myform.reset();
         submitError.innerHTML = 'Submitting...';
         submitError.style.color = "Green";
         return true;
     }
 }
+
+
+document.getElementById('btn').addEventListener('click', () => {
+    let myform = document.getElementById('contactform');
+    myform.submit();
+    myform.reset();
+})
